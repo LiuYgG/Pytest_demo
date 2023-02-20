@@ -3,10 +3,7 @@
   CreateTime: 2023 年 02 月 20 日
   普通测试用例文件夹
 '''
-import pytest
 
-
-@pytest.mark.test
 def test_one():
     a = 1
     b = 1
