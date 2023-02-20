@@ -22,7 +22,7 @@
         5.自己慢慢研究吧…
 
 ### 目录结构
-    conifg - 配置文件目录
+    conifg - 配置文件目录[暂时没用]
     test_cases(功能) / test_requests(接口) - 用例编写目录
     pytest.ini - pytest的配置文件
 
