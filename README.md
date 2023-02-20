@@ -1,5 +1,10 @@
 # python + pytest + allure测试框架集合
 
+### 环境配置
+    使用前在 cmd 或 commend 命令窗口中运行 requiment.txt 文件
+    运行命令：
+        pip install -r requiment.text
+
 ### main.py
     解释：这种方式方便一次性运行所创建的用例
     运行参数：
