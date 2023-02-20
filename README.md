@@ -25,20 +25,22 @@
 ### 目录结构
     conifg - 配置文件目录
         1. yaml类型文件：可配置一些字段参数
+    untils - 工具集合文件(可进行读取操作)
+    test_parametrize - 参数化目录
     test_cases(功能) / test_requests(接口) - 用例编写目录
     pytest.ini - pytest的配置文件
 
 ### pytest.ini配置文件详细参数
-    1. addopts配置：
+    1. addopts配置[更改默认命令行选项,省去重复性命令工作]：
         -s：表示输出调试信息，用于显示测试函数中print()打印的信息
         -v：未加前只打印模块名，加v后打印类名、模块名、方法名，显示更详细的信息
         -q：表示只显示整体测试结果
         -vs：这两个参数可以一起使用
         -n：支持多线程或者分布式运行测试用例（前提需安装：pytest-xdist插件）
         –html：生成html的测试报告（前提需安装：pytest-html插件） 如：pytest -vs --html ./reports/result.html
-    2. testpaths指定用例目录配置：
+    2. testpaths[指定用例目录配置]：
         例：testpaths = ./test_cases
-    3. markers 注册mark标记：
+    3. markers[注册mark标记, 用例的装饰器]：
         例：markers = 
                 p0: 优先级为P0
                 dev: 设置为开发环境
