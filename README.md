@@ -1,4 +1,4 @@
-# python + pytest 测试框架
+# python + pytest + allure测试框架集合
 
 ### main.py
     解释：这种方式方便一次性运行所创建的用例
@@ -28,6 +28,7 @@
     untils - 工具集合文件(可进行读取操作)
     test_parametrize - 参数化目录
     test_cases(功能) / test_requests(接口) - 用例编写目录
+    report - 报告目录
     pytest.ini - pytest的配置文件
 
 ### pytest.ini配置文件详细参数
