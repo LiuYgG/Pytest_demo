@@ -23,7 +23,8 @@
         5.自己慢慢研究吧…
 
 ### 目录结构
-    conifg - 配置文件目录[暂时没用]
+    conifg - 配置文件目录
+        1. yaml类型文件：可配置一些字段参数
     test_cases(功能) / test_requests(接口) - 用例编写目录
     pytest.ini - pytest的配置文件
 
