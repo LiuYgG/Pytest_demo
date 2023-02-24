@@ -28,11 +28,10 @@
         5.自己慢慢研究吧…
 
 ### 目录结构
-    conifg - 配置文件目录
+    data - 数据存放目录
         1. yaml类型文件：可配置一些字段参数
     untils - 工具集合文件(可进行读取操作)
-    test_parametrize - 参数化目录
-    test_cases(功能) / test_requests(接口) - 用例编写目录
+    cases - 用例编写目录
     report - 报告目录
     pytest.ini - pytest的配置文件
 
