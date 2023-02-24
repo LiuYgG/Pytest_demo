@@ -6,7 +6,7 @@ import allure
 import pytest
 import requests
 import json
-from untils.read_data import get_data
+from untils.get_data import get_data
 
 param = [
     ({"Content-Type": "application/json"}, {"account": "123456@qq.com", "password": "123456"})

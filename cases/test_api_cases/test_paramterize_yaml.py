@@ -3,7 +3,7 @@
   CreateTime: 2023 年 02 月 20 日
 '''
 import pytest
-from untils.read_data import get_data
+from untils.get_data import get_data
 
 # 单参数
 # @pytest.mark.parametrize("name", get_data['hero_name'])
