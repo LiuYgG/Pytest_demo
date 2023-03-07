@@ -1,0 +1,24 @@
+{
+  "test": [
+    {
+      "case": "this is case1",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "paydata": {
+        "account": "123456@qq.com",
+        "password": "123456"
+      }
+    },
+    {
+      "case": "this is case2",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "paydata": {
+        "account": "456789@qq.com",
+        "password": "654321"
+      }
+    }
+  ]
+}
