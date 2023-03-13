@@ -31,7 +31,7 @@
     data - 数据存放目录
         1. yaml类型文件：可配置一些字段参数
         2. json类型文件
-    untils - 工具集合文件(可进行读取操作)
+    untils - 工具集合文件(可进行读取操作) / 发送测试报告
     cases - 用例编写目录
     report - 报告目录
     pytest.ini - pytest的配置文件

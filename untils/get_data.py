@@ -17,7 +17,7 @@ def get_data_path():
 def get_test_data():
     with open(get_data_path(), encoding='utf8') as f:
         data = json.loads(f.read())
-        test = data['test']
+        test = data
         return test
 
 get_data = get_test_data()

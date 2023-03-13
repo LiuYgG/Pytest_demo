@@ -30,7 +30,7 @@ class Test_model(object):
         r = requests.post(url=url,
                           data=paydata,
                           headers=headers)
-        assert r.status_code != 200
+        assert r.status_code == 200
         # print(r.json())
         # result = r.json()
         # assert result['code'] == 403

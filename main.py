@@ -11,7 +11,12 @@
 '''
 import pytest
 import allure
+from untils import sen_report_mail
+
 
 # 主程序文件，方便集中运行编写的case
 if __name__ == '__main__':
     pytest.main()
+
+    # 发送测试报告
+    sen_report_mail.Mail().send_email()
