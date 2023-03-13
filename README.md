@@ -44,7 +44,7 @@
         -vs：这两个参数可以一起使用
         -n：支持多线程或者分布式运行测试用例（前提需安装：pytest-xdist插件）
         –html：生成html的测试报告（前提需安装：pytest-html插件） 如：pytest -vs --html ./reports/result.html
-        --capture=sys: 输出异常行为，如：-vs --html ./reports/result.html --capture=sys
+        --capture=sys: 输出异常行为，如：-vs --html ./reports/result.html --capture=sys --self-contained-html
     2. testpaths[指定用例目录配置]：
         例：testpaths = ./test_cases
     3. markers[注册mark标记, 用例的装饰器]：

@@ -31,9 +31,13 @@ class Mail():
         # 构建 MIMEMultipart对象代表邮件本身，可以往里面添加文本、图片、附件等
         mm = MIMEMultipart('related')
 
+
+        # 创建日期
+        dates = date.today()
+
         # 设置邮件头部内容
         # 邮件主题
-        subjcet_content = """ 测试报告 """
+        subjcet_content = f"""{dates}  自动化运行测试报告请注意查收 """
         # 设置发送者，注意严格遵守格式，里面邮箱为发件人邮箱
         mm["From"] = "sender_name<952904268@qq.com>"
         # 设置接受者，注意严格遵守格式，里面邮箱为接受者邮箱
@@ -42,7 +46,10 @@ class Mail():
         mm["Subject"] = Header(subjcet_content, 'utf-8')
 
         # 邮件正文内容
-        body_content="""您好，测试报告请注意查收"""
+        content = """测试报告"""
+        message_text = MIMEText(content, "plain", "utf-8")
+        mm.attach(message_text)
+
         # 构造附件
         atta = MIMEText(open(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))),"reports", "result.html")
                              , 'rb').read(), 'base64', 'utf-8')
